@@ -196,3 +196,8 @@ img.room-image {
 .room h5 {
   padding-top: 6px;
 }
+.room h1 {
+  color: #1d1d1d;
+  font-weight: 500;
+  font-size: 23px;
+}
