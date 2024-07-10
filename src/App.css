@@ -282,9 +282,9 @@ input.search-input {
 }
 
 @media (max-width: 992px) {
-  .nav-menu-grid {
+  /* .nav-menu-grid {
     gap: 10px;
-  }
+  } */
 
   .btn {
     padding: 10px 30px;
@@ -339,16 +339,16 @@ input.search-input {
 }
 
 @media (max-width: 576px) {
-  .nav-outline {
+  /* .nav-outline {
     flex-direction: column;
     align-items: flex-start;
-  }
+  } */
 
-  .nav-menu-grid {
+  /* .nav-menu-grid {
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
-  }
+  } */
 
   .btn {
     padding: 5px 15px;
