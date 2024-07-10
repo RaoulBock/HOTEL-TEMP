@@ -12,10 +12,8 @@ export const RoomScreen = () => {
       onClick: () => nav("/"),
     },
     {
-      name: "About",
-    },
-    {
-      name: "Locations",
+      name: "About / Location",
+      onClick: () => nav("/about"),
     },
   ];
 

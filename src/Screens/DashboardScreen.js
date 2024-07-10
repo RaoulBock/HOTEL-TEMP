@@ -1,38 +1,12 @@
 import React from "react";
 import { Nav } from "../components/Nav/Nav";
-import { APP_ICONS, AVAILABLE_ROOMS } from "../context/Settings";
+import { APP_ICONS, AVAILABLE_ROOMS, CARD_DATA } from "../context/Settings";
 import { Jumbotron } from "../components/Jumbotron/Jumbotron";
 import { Card } from "../components/Card/Card";
 import { useNavigate } from "react-router-dom";
 
 export const DashboardScreen = () => {
   const nav = useNavigate();
-  const CARD_DATA = [
-    {
-      name: "Free WIFI",
-      icon: APP_ICONS.WIFI,
-    },
-    {
-      name: "Gift Shop",
-      icon: APP_ICONS.SHOP,
-    },
-    {
-      name: "Free Parking",
-      icon: APP_ICONS.CAR,
-    },
-    {
-      name: "Coffee Shop",
-      icon: APP_ICONS.COFFEE,
-    },
-    {
-      name: "Swimming Pool",
-      icon: APP_ICONS.POOL,
-    },
-    {
-      name: "Pets Allowed",
-      icon: APP_ICONS.DOG,
-    },
-  ];
 
   const MENU = [
     {
@@ -40,10 +14,8 @@ export const DashboardScreen = () => {
       onClick: () => nav("/rooms"),
     },
     {
-      name: "About",
-    },
-    {
-      name: "Locations",
+      name: "About / Location",
+      onClick: () => nav("/about"),
     },
   ];
 

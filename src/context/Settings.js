@@ -101,3 +101,30 @@ export const AVAILABLE_ROOMS = [
     price: 400,
   },
 ];
+
+export const CARD_DATA = [
+  {
+    name: "Free WIFI",
+    icon: APP_ICONS.WIFI,
+  },
+  {
+    name: "Gift Shop",
+    icon: APP_ICONS.SHOP,
+  },
+  {
+    name: "Free Parking",
+    icon: APP_ICONS.CAR,
+  },
+  {
+    name: "Coffee Shop",
+    icon: APP_ICONS.COFFEE,
+  },
+  {
+    name: "Swimming Pool",
+    icon: APP_ICONS.POOL,
+  },
+  {
+    name: "Pets Allowed",
+    icon: APP_ICONS.DOG,
+  },
+];
