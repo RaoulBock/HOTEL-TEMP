@@ -201,3 +201,18 @@ img.room-image {
   font-weight: 500;
   font-size: 23px;
 }
+input.search-input {
+  padding: 10px;
+  border: 1px solid #dadada;
+  border-radius: 7px;
+  width: 250px;
+  outline: none;
+  text-indent: 23px;
+  margin-bottom: 10px;
+}
+.input-outline h4 {
+  position: relative;
+  top: 31px;
+  left: 10px;
+  width: fit-content;
+}
