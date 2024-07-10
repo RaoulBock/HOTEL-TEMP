@@ -29,7 +29,7 @@ export const DashboardScreen = () => {
     <div className="screen-outline">
       <Nav data={MENU} />
       <Jumbotron
-        title={"Welcome to Serenity Hotel"}
+        title={"Welcome to Pension New Nouvea Hotel."}
         description={
           "Sunt eu aliqua excepteur dolor laborum deserunt aute. Lorem commodo laboris quis qui occaecat laboris enim non. Velit Lorem magna proident amet minim officia magna dolor. Voluptate laborum consectetur dolor exercitation esse nulla excepteur enim cupidatat amet occaecat ullamco reprehenderit. Culpa occaecat cillum labore do in id nostrud nisi non duis est labore."
         }
