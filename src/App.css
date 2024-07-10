@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
+
 .nav-outline {
   padding: 10px;
   display: flex;
@@ -15,15 +17,18 @@
   background: white;
   z-index: 2;
 }
+
 .nav-outline img {
   width: 100px;
 }
+
 .nav-menu-grid {
   display: flex;
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
 }
+
 .nav-menu-grid h4 {
   color: #1d1d1d;
   font-weight: 400;
@@ -31,9 +36,11 @@
   font-size: 14px;
   transition: all 0.2s ease-in-out;
 }
+
 .nav-menu-grid h4:hover {
   font-weight: 500;
 }
+
 .btn {
   background-color: #fff;
   border: 0;
@@ -43,24 +50,27 @@
   color: #1d1d1d;
   cursor: pointer;
 }
+
 .btn-primary {
   background-color: #0063da;
   color: #fff;
   margin: 20px 0px;
 }
+
 .btn-outline {
   border: 1px solid #0063da;
   background-color: transparent;
   color: #0063da;
   font-weight: 600;
 }
+
 .jumbotron-outline {
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.6)
     ),
-    /* Add the gradient */ url("./components/Images/image2.jpg");
+    url("./components/Images/image2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -70,6 +80,7 @@
   margin: auto;
   border-radius: 7px;
 }
+
 .jumbotron-context h1,
 .jumbotron-context h2,
 .jumbotron-context h3,
@@ -79,6 +90,7 @@
 .jumbotron-context p {
   color: white;
 }
+
 .jumbotron-context {
   display: flex;
   align-items: center;
@@ -86,40 +98,48 @@
   height: 400px;
   font-weight: 400;
 }
+
 .jumbotron-button-grid {
   justify-content: center;
   display: flex;
   align-items: center;
   gap: 6px;
 }
+
 .jumbotron-header {
   width: 520px;
   padding: 6px;
 }
+
 .jumbotron-header p {
   font-size: 12px;
   color: #bbbbbb;
   margin-top: 6px;
 }
+
 .card-header-outline {
   text-align: center;
   margin: 20px 0px;
 }
+
 .card-header-outline h3 {
   color: #1d1d1d;
   font-size: 26px;
   font-weight: 600;
 }
+
 .card-context-outline {
   display: grid;
   grid-template-columns: auto auto auto;
   align-items: center;
   justify-content: space-evenly;
 }
+
 .amenities-menu {
   margin: 50px 0px;
   text-align: center;
 }
+
 .map {
   width: 100%;
   margin: auto;
@@ -132,32 +152,39 @@
   -moz-box-shadow: 0px 0px 201px -87px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 201px -87px rgba(0, 0, 0, 0.75);
 }
+
 .screen-outline {
   margin-bottom: 20px;
 }
+
 .about {
   width: 62%;
   margin: auto;
   margin: 30px auto;
 }
+
 .location {
   width: 62%;
   margin: auto;
 }
+
 .location h3 {
   color: #1d1d1d;
   font-weight: 500;
   margin-bottom: 6px;
 }
+
 .about p {
   font-size: 13px;
   color: #616161;
 }
+
 .about h3 {
   color: #1d1d1d;
   font-weight: 500;
   margin-bottom: 6px;
 }
+
 img.room-image {
   width: 200px;
   height: 200px;
@@ -165,42 +192,51 @@ img.room-image {
   background-position: center;
   border-radius: 6px;
 }
+
 .room-container {
   width: 200px;
 }
+
 .about-grid {
   display: grid;
   grid-template-columns: auto auto auto;
   align-items: center;
   justify-content: space-between;
 }
+
 .room img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 8px;
   background-size: cover;
   background-position: center;
 }
+
 .room p {
   width: 150px;
 }
+
 .room {
   margin-bottom: 15px;
   cursor: pointer;
   opacity: 0.9;
   transition: all 0.2s ease-in-out;
 }
+
 .room:hover {
   opacity: 1;
 }
+
 .room h5 {
   padding-top: 6px;
 }
+
 .room h1 {
   color: #1d1d1d;
   font-weight: 500;
   font-size: 23px;
 }
+
 input.search-input {
   padding: 10px;
   border: 1px solid #dadada;
@@ -210,9 +246,163 @@ input.search-input {
   text-indent: 23px;
   margin-bottom: 10px;
 }
+
 .input-outline h4 {
   position: relative;
   top: 31px;
   left: 10px;
   width: fit-content;
+}
+
+.amenities-menu h5 {
+  color: #1d1d1d;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.amenities-menu h3 {
+  font-size: 30px;
+  color: gray;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .about,
+  .location {
+    width: 80%;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-context-outline {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-menu-grid {
+    gap: 10px;
+  }
+
+  .btn {
+    padding: 10px 30px;
+  }
+
+  .jumbotron-header {
+    width: 80%;
+  }
+
+  /* .about-grid {
+    grid-template-columns: 1fr;
+  } */
+
+  .card-context-outline {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-outline img {
+    width: 80px;
+  }
+
+  .nav-menu-grid h4 {
+    font-size: 12px;
+  }
+
+  .btn {
+    padding: 8px 20px;
+  }
+
+  /* .jumbotron-context {
+    height: 300px;
+  } */
+
+  .jumbotron-header {
+    width: 90%;
+  }
+
+  .room img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .room p {
+    width: 100px;
+  }
+
+  input.search-input {
+    width: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-outline {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu-grid {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .btn {
+    padding: 5px 15px;
+  }
+
+  /* .jumbotron-header {
+    width: 100%;
+  } */
+
+  .map {
+    flex-direction: column;
+  }
+
+  .room img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .room p {
+    width: 80px;
+  }
+
+  input.search-input {
+    width: 150px;
+  }
+}
+
+@media (max-width: 360px) {
+  .nav-outline img {
+    width: 60px;
+  }
+
+  .nav-menu-grid h4 {
+    font-size: 10px;
+  }
+
+  .btn {
+    padding: 3px 10px;
+  }
+
+  .jumbotron-context {
+    height: 250px;
+  }
+
+  .room img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .room p {
+    width: 60px;
+  }
+
+  input.search-input {
+    width: 120px;
+  }
 }

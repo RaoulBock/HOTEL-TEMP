@@ -60,13 +60,15 @@ export const RoomScreen = () => {
             return (
               <div key={index} className="room">
                 <img src={room.img} alt={room.name} />
-                <h1>${room.price}.00</h1>
-                <h5>{room.name}</h5>
-                <p>
-                  {room.description.length > 80
-                    ? `${room.description.substring(0, 80)}...`
-                    : room.description}
-                </p>
+                <div>
+                  <h1>${room.price}.00</h1>
+                  <h5>{room.name}</h5>
+                  <p>
+                    {room.description.length > 80
+                      ? `${room.description.substring(0, 80)}...`
+                      : room.description}
+                  </p>
+                </div>
               </div>
             );
           })}
