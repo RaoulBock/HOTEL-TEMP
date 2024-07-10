@@ -273,7 +273,9 @@ input.search-input {
   }
 
   .about-grid {
-    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .card-context-outline {
@@ -363,16 +365,16 @@ input.search-input {
   }
 
   .room img {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 200px;
   }
 
   .room p {
-    width: 80px;
+    width: 100%;
   }
 
   input.search-input {
-    width: 150px;
+    width: 286px;
   }
 }
 
