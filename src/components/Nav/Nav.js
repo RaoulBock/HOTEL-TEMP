@@ -1,8 +1,10 @@
 import React from "react";
 import { APP_ICONS } from "../../context/Settings";
 import LOGO from "../Images/logo.png";
+import { useNavigate } from "react-router-dom";
 
 export const Nav = ({ data }) => {
+  const nav = useNavigate();
   return (
     <div className="nav-outline">
       <img src={LOGO} className="nav-icon" />
@@ -17,7 +19,9 @@ export const Nav = ({ data }) => {
           })}
         </div>
       )}
-      <button className="btn btn-primary">Book Today</button>
+      <button className="btn btn-primary" onClick={() => nav("/rooms")}>
+        Browse Rooms
+      </button>
     </div>
   );
 };

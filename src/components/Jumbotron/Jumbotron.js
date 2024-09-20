@@ -9,7 +9,7 @@ export const Jumbotron = ({ title, description }) => {
           <p>{description}</p>
           <div className="jumbotron-button-grid">
             <button className="btn btn-primary">Browse Rooms</button>
-            <button className="btn btn-outline">Book Now</button>
+            {/* <button className="btn btn-outline">Book Now</button> */}
           </div>
         </div>
       </div>
